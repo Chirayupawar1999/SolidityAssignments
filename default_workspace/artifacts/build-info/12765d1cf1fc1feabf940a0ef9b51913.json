@@ -1,0 +1,71 @@
+{
+	"id": "12765d1cf1fc1feabf940a0ef9b51913",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.18",
+	"solcLongVersion": "0.8.18+commit.87f61d96",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"erc-721.sol": {
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity >= 0.5.0 <0.9.0;\n\n// import \"@openzeppelin/contracts/token/ERC721/ERC721.sol\";\n// import \"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol\";\n// import \"@openzeppelin/contracts/access/Ownable.sol\";\n// import \"@openzeppelin/contracts/utils/Counters.sol\";\n\n// contract StandardNftToken is ERC721, ERC721URIStorage, Ownable {\n//     using Counters for Counters.Counter;\n\n//     Counters.Counter private _tokenId;\n\n//     constructor() ERC721(\"STADARDNFT\", \"snft\") {}\n\n//     function safeMint(address to, string memory uri) public view {\n//         uint tokenId = _tokenId.current();\n//         _tokenId.increment();\n//         _safeMint(to, tokenId);\n//         _setTokenURI(tokenId, uri);\n//     }\n\n//     function _burn(uint256 tokenId) internal override(ERC721, ERC721URIStorage) {\n//         super._burn(tokenId);\n//     }\n\n// }"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"erc-721.sol": {
+				"ast": {
+					"absolutePath": "erc-721.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.5",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "32:32:0"
+						}
+					],
+					"src": "32:865:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
